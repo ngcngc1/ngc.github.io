@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guochen Ning</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      color: rgb(102, 8, 116);
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h1, h2, h3, p, li, a {
+      color: rgb(102, 8, 116);
+    }
+    header {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    nav button {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      cursor: pointer;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+    }
+    nav button:hover {
+      background-color: #660874;
+      color: white;
+    }
+    nav button.active {
+      background-color: #660874;
+      color: white;
+      border-color: #660874;
+    }
+    .section {
+      display: none;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .section.active {
+      display: block;
+    }
+    .profile-img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+    .publication {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .publication img {
+      width: 240px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    @media (max-width: 600px) {
+      .publication {
+        flex-direction: column;
+        align-items: center;
+      }
+      .publication img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    .counter {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dr. Guochen Ning</h1>
+    <p style="font-style: italic; font-family: 'Brush Script MT', cursive; font-size: 1.2rem;">
+      To the pioneers who lead, the companions who walk beside, and the successors yet to stride.
+    </p>
+    <p>Assistant Professor | Tsinghua University</p>
+    <img src="Photo.jpg" alt="Guochen Ning" class="profile-img" />
+    <p>Email: ningguochen@tsinghua.edu.cn</p>
+    <p>
+      <a href="https://scholar.google.com.hk/citations?user=vSsdec8AAAAJ&hl=en">Google Scholar</a> |
+      <a href="hhttps://orcid.org/0000-0003-0282-7303">ORCID</a> |
+      <a href="https://www.researchgate.net/profile/Guochen-Ning?ev=prf_overview">ResearchGate</a>
+    </p>
+    <p class="counter">Visitor count: <span id="visits"></span></p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')" class="active">About Me</button>
+    <button onclick="showSection('cv')">CV</button>
+    <button onclick="showSection('awards')">Awards</button>
+    <button onclick="showSection('talks')">Talks</button>
+    <button onclick="showSection('publications')">Publications</button>
+    <button onclick="showSection('funding')">Funding</button>
+  </nav>
+
+  <section id="about" class="section active">
+    <h2>About Me</h2>
+    <p>
+        <strong>Dr. Ning (宁国琛) is currently an Assistant Professor and a Principal Investigator (PI) at Tsinghua University.</strong>
+    His research interests encompass structural design and autonomous control of medical robots, with a particular emphasis on intelligence. He also concentrates on research areas involving robot learning and the intersection of robotics and artificial intelligence (AI), with the ultimate goal of achieving autonomous medical robots capable of performing medical tasks in the future.
+</p>
+  </section>
+
+  <section id="cv" class="section">
+    <h2>Curriculum Vitae</h2>
+    <h3>Education</h3>
+    <ul>
+      <li>Ph.D. in Biomedical Engineering, Tsinghua University, 2017–2021</li>
+      <li>B.Eng., MA.Sc. in Biomedical Engineering [Top Class], Northeastern University, 2011–2017</li>
+    </ul>
+    <h3>Work Experience</h3>
+    <ul>
+      <li>Assistant Professor, Tsinghua University, 2023–Present</li>
+      <li>Assistant Research Fellow, Tsinghua University, 2021–2023</li>
+    </ul>
+  </section>
+
+  <section id="awards" class="section">
+    <h2>Awards</h2>
+    <ul>
+      <li>Young Excellent Paper Award from Chinese Society of Biomedical Engineering. 2022</li>
+      <li>Outstanding Graduates Award from Tsinghua University. 2021</li>
+      <li>Outstanding Doctorial Dissertation Award from Tsinghua University. 2021</li>
+      <li>Excellent Paper Award from The 15th Asian Conference on Computer-Aided Surgery. 2019</li>
+      <li>`Young Excellent Paper Award` from Chinese Society of Biomedical Engineering. 2019</li>
+    </ul>
+  </section>
+
+  <section id="talks" class="section">
+    <h2>Talks</h2>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </section>
+
+  <section id="publications" class="section">
+      <h2>Publications</h2>
+      <h3>2025</h3>
+      <div class="publication">
+          <img src="tmrb2025.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Autonomous Deformable Tissue Retraction System Based on 2D Visual Representation and Asymmetric Reinforcement Learning for Robotic Surgery</strong><br />
+              J Chen, <strong>G Ning*</strong>, L Ma, H Liao<br />
+              <em>IEEE Transactions on Medical Robotics and Bionics</em>, 2025<br />
+              <a href="https://doi.org/10.1109/TMRB.2025.3560399">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="olt.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Computational multi-angle optical coherence tomography using implicit neural representation</strong><br />
+              Y Li, C Zhang, T Huang, Y Fan, <strong>G Ning</strong>, H Liao*<br />
+              <em>Optics & Laser Technology</em>, 2025<br />
+              <a href="https://doi.org/10.1016/j.optlastec.2025.112551">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tbme2025_2.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Amber Light-Assisted CBI Endoscopy for Superior Deep Vascular Visualization and Blood-Containing Tissue Depth Differentiation</strong><br />
+              S Zhang, T Xie, G Tuya, <strong>G Ning</strong>, L Ma, Z Zhao, Y Fu, H Liao*<br />
+              <em>IEEE Transactions on Biomedical Engineering</em>, 2025<br />
+              <a href="https://doi.org/10.1109/TBME.2025.3545853">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tbme2025_1.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>A compact monocular dual-view 3D endoscope imaging system based on dichroic prism for minimally invasive surgery</strong><br />
+              X Wei, T Huang, <strong>G Ning</strong>, J Wang, S Zhang, H Liang, Y Zhai, L Ma, H Liao*<br />
+              <em>IEEE Transactions on Biomedical Engineering</em>, 2025<br />
+              <a href="https://doi.org/10.1109/TBME.2025.3545764">[Link]</a>
+          </div>
+      </div>
+      <h3>2024</h3>
+      <div class="publication">
+          <img src="miccai2024_2.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Adversarial Diffusion Model for Domain-Adaptive Depth Estimation in Bronchoscopic Navigation</strong><br />
+              Y Yang, <strong>G Ning*</strong>, C Zhong, H Liao<br />
+              <em>MICCAI</em>, 2024<br />
+              <a href="https://doi.org/10.1007/978-3-031-72089-5_5">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="miccai2024_1.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Airway Segmentation Based on Topological Structure Enhancement Using Multi-task Learning</strong><br />
+              X Yang, L Chen, Y Zheng, L Ma, F Chen, <strong>G Ning</strong>, H Liao*<br />
+              <em>MICCAI</em>, 2024<br />
+              <a href="https://doi.org/10.1007/978-3-031-72114-4_9">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tbme2024_1.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>A Fast-scanning Protocol of Optical Coherence Tomography Angiography Based on Structure-Aware Attention</strong><br />
+              Y Zheng, J Liao, L Ma, <strong>G Ning</strong>, F Chen, C Li, H Liao<br />
+              <em>IEEE Transactions on Biomedical Engineering</em>, 2024<br />
+              <a href="https://doi.org/10.1109/TBME.2024.3424285">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tmrb2024.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Cable-Driven Light-Weighting and Portable System for Robotic Medical Ultrasound Imaging</strong><br />
+              <strong>G Ning*</strong>, J Wang, H Liao<br />
+              <em>IEEE Transactions on Medical Robotics and Bionics</em>, 2024<br />
+              <a href="https://doi.org/10.1109/TMRB.2024.3422608">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tie2024.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Inverse-reinforcement-learning-based robotic ultrasound active compliance control in uncertain environments</strong><br />
+              <strong>G Ning</strong>, H Liang, X Zhang, H Liao*<br />
+              <em>IEEE Transactions on Industrial Electronics</em>, 2024<br />
+              <a href="https://doi.org/10.1109/TIE.2023.3250767">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="mia2024.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>One-shot neuroanatomy segmentation through online data augmentation and confidence aware pseudo label</strong><br />
+              L Zhang, <strong>G Ning</strong>, H Liang, B Han, H Liao<br />
+              <em>Medical Image Analysis</em>, 2024<br />
+              <a href="https://doi.org/10.1016/10.1016/j.media.2024.103182">[Link]</a>
+          </div>
+      </div>
+      <h3>2023</h3>
+      <div class="publication">
+          <img src="ldh2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Large language models and their impact in ophthalmology</strong><br />
+              Bjorn Kaijun Betzler, Haichao Chen, Ching-Yu Cheng, Cecilia S Lee, <strong>G Ning</strong>, Su Jeong Song, Aaron Y Lee, Ryo Kawasaki, Peter van Wijngaarden, Andrzej Grzybowski, Mingguang He, Dawei Li, An Ran Ran, Daniel Shu Wei Ting, Kelvin Teo, Paisan Ruamviboonsuk, Sobha Sivaprasad, Varun Chaudhary, Ramin Tadayoni, Xiaofei Wang, Carol Y Cheung, Yingfeng Zheng, Ya Xing Wang, Yih Chung Tham, Tien Yin Wong<br />
+              <em>The Lancet Digital Health</em>, 2023<br />
+              <a href="https://doi.org/10.1016/S2589-7500(23)00201-7">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="jbhi2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>A segmentation framework with unsupervised learning-based label mapper for the ventricular target of intracranial germ cell tumor</strong><br />
+              X Wang, S Liu, N Yang, F Chen, L Ma, <strong>G Ning</strong>, H Zhang, X Qiu, H Liao*<br />
+              <em>IEEE Journal of Biomedical and Health Informatics</em>, 2023<br />
+              <a href="https://doi.org/10.1109/JBHI.2023.3310492">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="mia2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Anatomically constrained and attention-guided deep feature fusion for joint segmentation and deformable medical image registration</strong><br />
+              HG Khor,<strong>G Ning</strong>, Y Sun, X Lu, X Zhang, H Liao*<br />
+              <em>Medical Image Analysis</em>, 2023<br />
+              <a href="https://doi.org/10.1016/j.media.2023.102811">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="bst2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>The potential of'Segment Anything'(SAM) for universal intelligent ultrasound image guidance</strong><br />
+              <strong>G Ning*</strong>, H Liang, Z Jiang, H Zhang, H Liao<br />
+              <em>Bioscience trends</em>, 2023<br />
+              <a href="https://doi.org/10.5582/bst.2023.01119">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tbme2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Autonomous robotic ultrasound vascular imaging system with decoupled control strategy for external-vision-free environments</strong><br />
+              <strong>G Ning</strong>, H Liang, X Zhang, H Liao<br />
+              <em>IEEE Transactions on Biomedical Engineering</em>, 2023<br />
+              <a href="https://doi.org/10.1109/TBME.2023.3279114">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="isbi2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Doppler image-based weakly-supervised vascular ultrasound segmentation with transformer</strong><br />
+              <strong>G Ning</strong>, H Liang, F Chen, X Zhang, H Liao*<br />
+              <em>ISBI</em>, 2023<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tmech2023.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>A novel miniature spring-based continuum manipulator for minimally invasive surgery: Design and evaluation</strong><br />
+              J Wang, C Hu, <strong>G Ning</strong>, L Ma, X Zhang, H Liao*<br />
+              <em>Medical Image Analysis</em>, 2023<br />
+              <a href="https://doi.org/10.1109/TMECH.2023.3252279">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="cmig2022.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Symmetric pyramid network for medical image inverse consistent diffeomorphic registration</strong><br />
+              L Zhang, <strong>G Ning</strong>, L Zhou, H Liao*<br />
+              <em>Medical Image Analysis</em>, 2023<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tbme2022.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Immunohistochemical index prediction of breast cancer by using hybrid ultrasound data</strong><br />
+              F Chen, H Han, <strong>G Ning</strong>, B Wen, H Liao, W Kong, D Zhang<br />
+              <em>Medical Image Analysis</em>, 2023<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <h3>2022</h3>
+      <div class="publication">
+          <img src="isbi2022.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Spatial position estimation method for 3d ultrasound reconstruction based on hybrid transfomers</strong><br />
+              <strong>G Ning</strong>, H Liang, L Zhou, X Zhang, H Liao<br />
+              <em>ISBI</em>, 2022<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="jbhi2022.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Ultrasound speckle reduction using wavelet-based generative adversarial network</strong><br />
+              HG Khor#, <strong>G Ning#</strong>, X Zhang, H Liao*<br />
+              <em>IEEE Journal of Biomedical and Health Informatics</em>, 2022<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <h3>2021-2018</h3>
+      <div class="publication">
+          <img src="ijcars2021.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Force-guided autonomous robotic ultrasound scanning control method for soft uncertain environment</strong><br />
+              <strong>G Ning</strong>, J Chen, X Zhang, H Liao*<br />
+              <em>International Journal of Computer Assisted Radiology and Surgery</em>, 2022<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="tbme2021.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Autonomic robotic ultrasound imaging system based on reinforcement learning</strong><br />
+              <strong>G Ning</strong>, X Zhang, H Liao*<br />
+              <em>IEEE transactions on biomedical engineering </em>, 2021<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="thro2020.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Real-time and multimodality image-guided intelligent HIFU therapy for uterine fibroid</strong><br />
+              <strong>G Ning</strong>, X Zhang, Q Zhang, Z Wang, H Liao*<br />
+              <em>Theranostics</em>, 2020<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="hlt2019.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Morphological active contour without edge‐based model for real‐time and non‐rigid uterine fibroid tracking in HIFU treatment</strong><br />
+              <strong>G Ning</strong>, X Zhang, H Liao<br />
+              <em>Healthcare Technology Letters</em>, 2019<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="teaser1.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Augmented reality surgical navigation with accurate CBCT-patient registration for dental implant placement</strong><br />
+              L Ma, W Jiang, B Zhang, X Qu,<strong>G Ning</strong>, X Zhang, H Liao<br />
+              <em>Medical & biological engineering & computing</em>, 2018<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+      <div class="publication">
+          <img src="teaser1.jpg" alt="Graphical abstract" />
+          <div>
+              <strong>Moving-tolerant augmented reality surgical navigation system using autostereoscopic three-dimensional image overlay</strong><br />
+              C Ma, G Chen, X Zhang, <strong>G Ning</strong>, H Liao<br />
+              <em>IEEE journal of biomedical and health informatics</em>, 2018<br />
+              <a href="https://doi.org/10.1016/j.media.2023.xxxxx">[Link]</a>
+          </div>
+      </div>
+  </section>
+
+  <section id="funding" class="section">
+      <h2>Funding</h2>
+      <ul>
+          <li><strong>Principal Investigator</strong>  National Natural Science Foundation of China (824*****) , RMB ¥ 480,000, 2025-2029</li>
+      </ul>
+      <ul>
+          <li><strong>Principal Investigator</strong>  Scholar of Young Talent Promoting Project (青年人才托举), RMB ¥ 300,000, 2024-2026</li>
+      </ul>
+      <ul>
+          <li><strong>Principal Investigator</strong>   National Natural Science Foundation of China (622*****), RMB ¥ 300,000, 2023-2025</li>
+      </ul>
+      <ul>
+          <li><strong>Principal Investigator</strong>    ‘Tsinghua Huiyan’ Talent Foundation of Tsinghua University, RMB ¥ 600,000, 2021-2023</li>
+      </ul>
+      <ul>
+          <li><strong>Principal Investigator</strong>    China Postdoctoral Science Foundation (2021M******), RMB ¥ 80,000, 2021-2023</li>
+      </ul>
+      <ul>
+          <li><strong>Investigator</strong>   The National Key Research and Development Program of China (2022YFC*******), RMB ¥ 51,200,000, 2022-2025</li>
+      </ul>
+      <ul>
+          <li><strong>Investigator</strong>   The National Key Research and Development Program of China (2023YFC*******), RMB ¥ 2,550,000, 2023-2026</li>
+      </ul>
+      <ul>
+          <li><strong>Investigator</strong>  National Natural Science Foundation of China (820*****), RMB ¥ 7,310,000, 2020-2024</li>
+      </ul>
+      <ul>
+          <li><strong>Investigator</strong>   The National Key Research and Development Program of China (2017YFC*******), RMB ¥ 7,000,000, 2015-2019</li>
+      </ul>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const visitsElement = document.getElementById('visits');
+      let visits = localStorage.getItem('visitCount') || 0;
+      visits = parseInt(visits) + 1;
+      localStorage.setItem('visitCount', visits);
+      visitsElement.textContent = visits;
+    });
+  </script>
+</body>
+</html>
